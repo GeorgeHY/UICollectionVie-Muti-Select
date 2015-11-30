@@ -15,6 +15,10 @@
 		8626F7011C0BD1CB00ADD833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8626F6FF1C0BD1CB00ADD833 /* LaunchScreen.storyboard */; };
 		8626F70C1C0BD1CB00ADD833 /* CollectionViewMutiSelectedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8626F70B1C0BD1CB00ADD833 /* CollectionViewMutiSelectedTests.m */; };
 		8626F7171C0BD1CB00ADD833 /* CollectionViewMutiSelectedUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8626F7161C0BD1CB00ADD833 /* CollectionViewMutiSelectedUITests.m */; };
+		8626F7271C0BDA5B00ADD833 /* Cell_Muti.m in Sources */ = {isa = PBXBuildFile; fileRef = 8626F7251C0BDA5B00ADD833 /* Cell_Muti.m */; };
+		8626F7281C0BDA5B00ADD833 /* Cell_Muti.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8626F7261C0BDA5B00ADD833 /* Cell_Muti.xib */; };
+		8626F72B1C0BDBCB00ADD833 /* 框1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8626F7291C0BDBCB00ADD833 /* 框1.png */; };
+		8626F72C1C0BDBCB00ADD833 /* 框2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8626F72A1C0BDBCB00ADD833 /* 框2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,11 @@
 		8626F7121C0BD1CB00ADD833 /* CollectionViewMutiSelectedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewMutiSelectedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8626F7161C0BD1CB00ADD833 /* CollectionViewMutiSelectedUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewMutiSelectedUITests.m; sourceTree = "<group>"; };
 		8626F7181C0BD1CB00ADD833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8626F7241C0BDA5B00ADD833 /* Cell_Muti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell_Muti.h; sourceTree = "<group>"; };
+		8626F7251C0BDA5B00ADD833 /* Cell_Muti.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell_Muti.m; sourceTree = "<group>"; };
+		8626F7261C0BDA5B00ADD833 /* Cell_Muti.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell_Muti.xib; sourceTree = "<group>"; };
+		8626F7291C0BDBCB00ADD833 /* 框1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "框1.png"; sourceTree = "<group>"; };
+		8626F72A1C0BDBCB00ADD833 /* 框2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "框2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,11 @@
 				8626F6F51C0BD1CB00ADD833 /* AppDelegate.m */,
 				8626F6F71C0BD1CB00ADD833 /* ViewController.h */,
 				8626F6F81C0BD1CB00ADD833 /* ViewController.m */,
+				8626F7241C0BDA5B00ADD833 /* Cell_Muti.h */,
+				8626F7251C0BDA5B00ADD833 /* Cell_Muti.m */,
+				8626F7261C0BDA5B00ADD833 /* Cell_Muti.xib */,
+				8626F7291C0BDBCB00ADD833 /* 框1.png */,
+				8626F72A1C0BDBCB00ADD833 /* 框2.png */,
 				8626F6FA1C0BD1CB00ADD833 /* Main.storyboard */,
 				8626F6FD1C0BD1CB00ADD833 /* Assets.xcassets */,
 				8626F6FF1C0BD1CB00ADD833 /* LaunchScreen.storyboard */,
@@ -207,6 +221,7 @@
 				TargetAttributes = {
 					8626F6ED1C0BD1CB00ADD833 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 7A29GX6D45;
 					};
 					8626F7061C0BD1CB00ADD833 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -243,9 +258,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8626F72B1C0BDBCB00ADD833 /* 框1.png in Resources */,
+				8626F7281C0BDA5B00ADD833 /* Cell_Muti.xib in Resources */,
 				8626F7011C0BD1CB00ADD833 /* LaunchScreen.storyboard in Resources */,
 				8626F6FE1C0BD1CB00ADD833 /* Assets.xcassets in Resources */,
 				8626F6FC1C0BD1CB00ADD833 /* Main.storyboard in Resources */,
+				8626F72C1C0BDBCB00ADD833 /* 框2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8626F7271C0BDA5B00ADD833 /* Cell_Muti.m in Sources */,
 				8626F6F91C0BD1CB00ADD833 /* ViewController.m in Sources */,
 				8626F6F61C0BD1CB00ADD833 /* AppDelegate.m in Sources */,
 				8626F6F31C0BD1CB00ADD833 /* main.m in Sources */,
@@ -413,10 +432,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CollectionViewMutiSelected/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GE.CollectionViewMutiSelected;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +445,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CollectionViewMutiSelected/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GE.CollectionViewMutiSelected;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

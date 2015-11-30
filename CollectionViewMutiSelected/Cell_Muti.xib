@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Cell_Muti">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="285" height="68"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFR-Gd-0UD">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="4FL-DB-txE">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstAttribute="width" constant="100" id="bXB-hW-JJl">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4FL-DB-txE"/>
+                                <exclude reference="bXB-hW-JJl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="4FL-DB-txE"/>
+                                <include reference="bXB-hW-JJl"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" red="0.23921568630000001" green="0.74117647060000003" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fFR-Gd-0UD" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Eiq-Dp-eCd"/>
+                <constraint firstAttribute="trailing" secondItem="fFR-Gd-0UD" secondAttribute="trailing" constant="8" id="M6R-07-6S7">
+                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                </constraint>
+            </constraints>
+            <size key="customSize" width="285" height="68"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="fFR-Gd-0UD"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Eiq-Dp-eCd"/>
+                    <exclude reference="M6R-07-6S7"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="fFR-Gd-0UD"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Eiq-Dp-eCd"/>
+                    <include reference="M6R-07-6S7"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="selectImg" destination="fFR-Gd-0UD" id="SJm-pI-MD8"/>
+            </connections>
+            <point key="canvasLocation" x="370.5" y="431"/>
+        </collectionViewCell>
+    </objects>
+</document>
